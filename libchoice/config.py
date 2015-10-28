@@ -1,8 +1,6 @@
 import os
 import yaml
 
-from .dictutil import dotdictify
-
 
 class Config(object):
     def __init__(self, path='~/.browserchoice'):
@@ -17,8 +15,8 @@ class Config(object):
             self.save()
 
         with open(self.config_path, 'r') as stream:
-            self.settings = dotdictify(yaml.load(stream))
+            self.settings = yaml.load(stream)
 
     def save(self):
         with open(self.config_path, 'w') as stream:
-            yaml.dump(dict(self.settings), stream)
+            yaml.dump(self.settings, stream)

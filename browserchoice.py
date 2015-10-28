@@ -4,14 +4,14 @@ import click
 import sys
 
 from libchoice.config import Config
-from libchoice.browser import Browser
+from libchoice.browser import Browser, get_browser_for_url
 
 
 def handle(url):
     conf = Config()
     conf.load()
-
-    return url, 'ok'
+    browser = get_browser_for_url(url, conf.settings)
+    browser.open(url)
 
 
 @click.command()
@@ -19,8 +19,7 @@ def handle(url):
 def browserchoice(urls):
     if not urls:
         print('Usage: browserchoice URL')
-    result = [handle(url) for url in urls]
-    print result
+    [handle(url) for url in urls]
     sys.exit(0)
 
 
