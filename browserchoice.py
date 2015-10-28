@@ -4,14 +4,14 @@ import click
 import sys
 
 from libchoice.config import Config
-from libchoice.browser import Browser, get_browser_for_url
+from libchoice.browser import get_browser_for_url
 
 
 def handle(url):
     conf = Config()
     conf.load()
     browser = get_browser_for_url(url, conf.settings)
-    browser.open(url)
+    browser.open_new_tab(url)
 
 
 @click.command()
