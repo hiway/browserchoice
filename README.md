@@ -38,10 +38,10 @@ Config file: `~/.browserchoice`
         #!/bin/sh
         PATH_TO_BINARY $URL
         exit 0
-  * ![Setup instructions for LinCastor](http://i.imgur.com/E5LrQsE.png)
+  ![Setup instructions for LinCastor](http://i.imgur.com/E5LrQsE.png)
 * Install RCDefaultApp
   * [Get RCDefaultApp here](http://www.rubicode.com/Software/RCDefaultApp/)
   * Open `System Preferences`, select `Default Apps`
   * Select `LinCastor` app as the default Web Browser Application
-  * ![Setup instructions for RCDdefaultApp](http://i.imgur.com/UWM7BLN.png)
+  ![Setup instructions for RCDdefaultApp](http://i.imgur.com/UWM7BLN.png)
 * Test if applied system-wide: `open http://github.com`
