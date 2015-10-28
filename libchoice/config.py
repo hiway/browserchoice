@@ -5,10 +5,12 @@ import yaml
 class Config(object):
     def __init__(self, path='~/.browserchoice'):
         self.config_path = os.path.expanduser(path)
-        self.settings = {'browserchoice':
-            [{'browser': [
+        self.settings = {'browserchoice':[{
+                'default_browser':'Firefox',
+                'browser': [
                 {'name': 'Google Chrome'},
-                {'urls': ['gmail.com', 'google.com']}]}], }
+                {'urls': ['gmail.com', 'google.com']}
+            ]}], }
 
     def load(self):
         if not os.path.exists(self.config_path):
