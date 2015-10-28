@@ -22,6 +22,3 @@ def browserchoice(urls):
     [handle(url) for url in urls]
     sys.exit(0)
 
-
-if __name__ == '__main__':
-    browserchoice()
