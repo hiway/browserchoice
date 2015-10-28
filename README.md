@@ -35,8 +35,8 @@ Config file: `~/.browserchoice`
     * title: `browserchoice`
     * schemes: `http,https`
     * shell: 
-        ```#!/bin/sh
-        PATH_TO_BINARY $URL
+        ```#!/bin/sh\n
+        PATH_TO_BINARY $URL\n
         exit 0```
   ![Setup instructions for LinCastor](http://i.imgur.com/E5LrQsE.png)
 * Install RCDefaultApp
