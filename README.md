@@ -31,8 +31,8 @@ Config file: `~/.browserchoice`
 * Note the output of: `which browserchoice`
 * Install LinCastor app
   * [Get LinCastor here](https://onflapp.wordpress.com/lincastor/)
-  * ![Setup instructions for LinCastor](http://imgur.com/E5LrQsE)
+  * ![Setup instructions for LinCastor](http://i.imgur.com/E5LrQsE.png)
 * Install RCDefaultApp
   * [Get RCDefaultApp here](http://www.rubicode.com/Software/RCDefaultApp/)
-  * ![Setup instructions for RCDdefaultApp](http://imgur.com/UWM7BLN)
+  * ![Setup instructions for RCDdefaultApp](http://i.imgur.com/UWM7BLN.png)
 * Test if applied system-wide: `open http://github.com`
