@@ -28,16 +28,16 @@ Config file: `~/.browserchoice`
 ## Usage:
 
 * Test from command line: `browserchoice http://github.com`
-* PATH_TO_BINARY: `which browserchoice`
+* Execute `which browserchoice | pbcopy` to copy the PATH_TO_BINARY into clipboard
 * Install LinCastor app
   * [Get LinCastor here](https://onflapp.wordpress.com/lincastor/)
   * Click `add new scheme`
     * title: `browserchoice`
     * schemes: `http,https`
     * shell: 
-        ```#!/bin/sh\n
-        PATH_TO_BINARY $URL\n
-        exit 0```
+        * `#!/bin/sh`
+        * `PATH_TO_BINARY $URL`
+        * `exit 0`
   ![Setup instructions for LinCastor](http://i.imgur.com/E5LrQsE.png)
 * Install RCDefaultApp
   * [Get RCDefaultApp here](http://www.rubicode.com/Software/RCDefaultApp/)
