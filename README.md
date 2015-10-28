@@ -28,7 +28,7 @@ Config file: `~/.browserchoice`
 ## Usage:
 
 * Test from command line: `browserchoice http://github.com`
-* Execute `which browserchoice | pbcopy` to copy the PATH_TO_BINARY into clipboard
+* Execute `which browserchoice | pbcopy` to copy `PATH_TO_BINARY` into clipboard
 * Install LinCastor app
   * [Get LinCastor here](https://onflapp.wordpress.com/lincastor/)
   * Click `add new scheme`
