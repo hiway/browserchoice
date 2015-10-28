@@ -6,11 +6,14 @@ from .dictutil import dotdictify
 class Config(object):
     def __init__(self, path='~/.browserchoice'):
         self.config_path = os.path.expanduser(path)
-        self.settings = {}
+        self.settings = {'browserchoice':
+            [{'browser': [
+                {'name': 'Google Chrome'},
+                {'urls': ['gmail.com', 'google.com']}]}], }
 
     def load(self):
         if not os.path.exists(self.config_path):
-            open(self.config_path, 'a').close()
+            self.save()
 
         with open(self.config_path, 'r') as stream:
             self.settings = dotdictify(yaml.load(stream))
