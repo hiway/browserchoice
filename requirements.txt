@@ -1,3 +1,4 @@
 click==5.1
 Nuitka==0.5.15
+PyYAML==3.11
 wheel==0.24.0
