@@ -11,9 +11,8 @@ def handle(url):
     conf = Config()
     conf.load()
 
-    # browser = Browser('Google Chrome')
-    # browser.open(url)
-    return url,'ok'
+    return url, 'ok'
+
 
 @click.command()
 @click.argument('urls', nargs=-1)
@@ -23,6 +22,7 @@ def browserchoice(urls):
     result = [handle(url) for url in urls]
     print result
     sys.exit(0)
+
 
 if __name__ == '__main__':
     browserchoice()

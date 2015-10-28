@@ -9,4 +9,3 @@ class Browser(object):
 
     def open(self, url):
         self.instance.open_new_tab(url)
-

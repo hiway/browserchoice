@@ -3,6 +3,7 @@ import yaml
 
 from .dictutil import dotdictify
 
+
 class Config(object):
     def __init__(self, path='~/.browserchoice'):
         self.config_path = os.path.expanduser(path)
@@ -21,4 +22,3 @@ class Config(object):
     def save(self):
         with open(self.config_path, 'w') as stream:
             yaml.dump(dict(self.settings), stream)
-
