@@ -5,7 +5,7 @@ import yaml
 class Config(object):
     def __init__(self, path='~/.browserchoice'):
         self.config_path = os.path.expanduser(path)
-        self.settings = {'browserchoice':[{
+        self.settings = {'browsers':[{
                 'default_browser':'Firefox',
                 'browser': [
                 {'name': 'Google Chrome'},
