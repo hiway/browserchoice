@@ -7,7 +7,7 @@ def get_browser(browser_name):
 
 
 def browser_is_handler_for_url(browser, url):
-    return [u for u in browser['urls'] if u in url]
+    return [u for u in browser['browser']['urls'] if u in url]
 
 
 def get_browser_for_url(url, settings):
